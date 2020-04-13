@@ -63,7 +63,7 @@ while True:
             prediction = 'dog'
         else:
             prediction = 'cat'
-            
+        
         print(prediction)
 
         #if prediction is 0, which means I am missing on the image, then show the frame in gray color.
@@ -74,5 +74,6 @@ while True:
         key=cv2.waitKey(1)
         if key == ord('q'):
                 break
+print(result)
 video.release()
 cv2.destroyAllWindows()
